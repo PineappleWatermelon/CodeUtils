@@ -10,7 +10,7 @@ public class TestStream {
 	 */
 	public static void search(File file, String search) {
 		if (file.isFile()) {
-      //限定文件的范围
+     			 //限定文件的范围
 			if(file.getName().toLowerCase().endsWith(".java")){
 				String fileContent = readFileConent(file);
 				if(fileContent.contains(search)){
@@ -39,9 +39,9 @@ public class TestStream {
 	}
 
 	public static void main(String[] args) {
-    //加入文件路径
+    		//加入文件路径
 		File folder =new File("E:\\Project");
-    //文件路径，和搜索的字符串
+   		 //文件路径，和搜索的字符串
 		search(folder,"Magic");
 	}
 }
